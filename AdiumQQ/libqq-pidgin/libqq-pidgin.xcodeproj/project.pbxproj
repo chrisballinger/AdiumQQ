@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEEF0670147DF88900BF67C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF066F147DF88900BF67C5 /* Cocoa.framework */; };
+		BEEF067A147DF88900BF67C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF0678147DF88900BF67C5 /* InfoPlist.strings */; };
+		BEEF06AE147DF8DF00BF67C5 /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF06AB147DF8DF00BF67C5 /* libglib.framework */; };
+		BEEF06AF147DF8DF00BF67C5 /* libgmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF06AC147DF8DF00BF67C5 /* libgmodule.framework */; };
+		BEEF06B0147DF8DF00BF67C5 /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF06AD147DF8DF00BF67C5 /* libpurple.framework */; };
+		BEEF06E4147DF94500BF67C5 /* buddy_info.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06B1147DF94500BF67C5 /* buddy_info.c */; };
+		BEEF06E5147DF94500BF67C5 /* buddy_info.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06B2147DF94500BF67C5 /* buddy_info.h */; };
+		BEEF06E6147DF94500BF67C5 /* buddy_list.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06B3147DF94500BF67C5 /* buddy_list.c */; };
+		BEEF06E7147DF94500BF67C5 /* buddy_list.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06B4147DF94500BF67C5 /* buddy_list.h */; };
+		BEEF06E8147DF94500BF67C5 /* buddy_memo.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06B5147DF94500BF67C5 /* buddy_memo.c */; };
+		BEEF06E9147DF94500BF67C5 /* buddy_memo.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06B6147DF94500BF67C5 /* buddy_memo.h */; };
+		BEEF06EA147DF94500BF67C5 /* buddy_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06B7147DF94500BF67C5 /* buddy_opt.c */; };
+		BEEF06EB147DF94500BF67C5 /* buddy_opt.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06B8147DF94500BF67C5 /* buddy_opt.h */; };
+		BEEF06EC147DF94500BF67C5 /* char_conv.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06B9147DF94500BF67C5 /* char_conv.c */; };
+		BEEF06ED147DF94500BF67C5 /* char_conv.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06BA147DF94500BF67C5 /* char_conv.h */; };
+		BEEF06EE147DF94500BF67C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF06BC147DF94500BF67C5 /* InfoPlist.strings */; };
+		BEEF06EF147DF94500BF67C5 /* file_trans.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06BE147DF94500BF67C5 /* file_trans.c */; };
+		BEEF06F0147DF94500BF67C5 /* file_trans.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06BF147DF94500BF67C5 /* file_trans.h */; };
+		BEEF06F1147DF94500BF67C5 /* group_im.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06C0147DF94500BF67C5 /* group_im.c */; };
+		BEEF06F2147DF94500BF67C5 /* group_im.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06C1147DF94500BF67C5 /* group_im.h */; };
+		BEEF06F3147DF94500BF67C5 /* group_info.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06C2147DF94500BF67C5 /* group_info.c */; };
+		BEEF06F4147DF94500BF67C5 /* group_info.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06C3147DF94500BF67C5 /* group_info.h */; };
+		BEEF06F5147DF94500BF67C5 /* group_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06C4147DF94500BF67C5 /* group_internal.c */; };
+		BEEF06F6147DF94500BF67C5 /* group_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06C5147DF94500BF67C5 /* group_internal.h */; };
+		BEEF06F7147DF94500BF67C5 /* group_join.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06C6147DF94500BF67C5 /* group_join.c */; };
+		BEEF06F8147DF94500BF67C5 /* group_join.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06C7147DF94500BF67C5 /* group_join.h */; };
+		BEEF06F9147DF94500BF67C5 /* group_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06C8147DF94500BF67C5 /* group_opt.c */; };
+		BEEF06FA147DF94500BF67C5 /* group_opt.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06C9147DF94500BF67C5 /* group_opt.h */; };
+		BEEF06FB147DF94500BF67C5 /* group.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06CA147DF94500BF67C5 /* group.c */; };
+		BEEF06FC147DF94500BF67C5 /* group.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06CB147DF94500BF67C5 /* group.h */; };
+		BEEF06FD147DF94500BF67C5 /* im.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06CC147DF94500BF67C5 /* im.c */; };
+		BEEF06FE147DF94500BF67C5 /* im.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06CD147DF94500BF67C5 /* im.h */; };
+		BEEF06FF147DF94500BF67C5 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06CF147DF94500BF67C5 /* internal.h */; };
+		BEEF0700147DF94500BF67C5 /* packet_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06D0147DF94500BF67C5 /* packet_parse.c */; };
+		BEEF0701147DF94500BF67C5 /* packet_parse.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06D1147DF94500BF67C5 /* packet_parse.h */; };
+		BEEF0702147DF94500BF67C5 /* qq_base.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06D2147DF94500BF67C5 /* qq_base.c */; };
+		BEEF0703147DF94500BF67C5 /* qq_base.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06D3147DF94500BF67C5 /* qq_base.h */; };
+		BEEF0704147DF94500BF67C5 /* qq_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06D4147DF94500BF67C5 /* qq_crypt.c */; };
+		BEEF0705147DF94500BF67C5 /* qq_crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06D5147DF94500BF67C5 /* qq_crypt.h */; };
+		BEEF0706147DF94500BF67C5 /* qq_define.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06D6147DF94500BF67C5 /* qq_define.c */; };
+		BEEF0707147DF94500BF67C5 /* qq_define.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06D7147DF94500BF67C5 /* qq_define.h */; };
+		BEEF0708147DF94500BF67C5 /* qq_network.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06D8147DF94500BF67C5 /* qq_network.c */; };
+		BEEF0709147DF94500BF67C5 /* qq_network.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06D9147DF94500BF67C5 /* qq_network.h */; };
+		BEEF070A147DF94500BF67C5 /* qq_process.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06DA147DF94500BF67C5 /* qq_process.c */; };
+		BEEF070B147DF94500BF67C5 /* qq_process.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06DB147DF94500BF67C5 /* qq_process.h */; };
+		BEEF070C147DF94500BF67C5 /* qq_trans.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06DC147DF94500BF67C5 /* qq_trans.c */; };
+		BEEF070D147DF94500BF67C5 /* qq_trans.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06DD147DF94500BF67C5 /* qq_trans.h */; };
+		BEEF070E147DF94500BF67C5 /* qq.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06DE147DF94500BF67C5 /* qq.c */; };
+		BEEF070F147DF94500BF67C5 /* qq.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06DF147DF94500BF67C5 /* qq.h */; };
+		BEEF0710147DF94500BF67C5 /* send_file.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06E0147DF94500BF67C5 /* send_file.c */; };
+		BEEF0711147DF94500BF67C5 /* send_file.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06E1147DF94500BF67C5 /* send_file.h */; };
+		BEEF0712147DF94500BF67C5 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = BEEF06E2147DF94500BF67C5 /* utils.c */; };
+		BEEF0713147DF94500BF67C5 /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = BEEF06E3147DF94500BF67C5 /* utils.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEEF066C147DF88900BF67C5 /* libqq-pidgin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "libqq-pidgin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEF066F147DF88900BF67C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BEEF0672147DF88900BF67C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BEEF0673147DF88900BF67C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEEF0674147DF88900BF67C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEEF0677147DF88900BF67C5 /* libqq-pidgin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libqq-pidgin-Info.plist"; sourceTree = "<group>"; };
+		BEEF0679147DF88900BF67C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEEF067B147DF88900BF67C5 /* libqq-pidgin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libqq-pidgin-Prefix.pch"; sourceTree = "<group>"; };
+		BEEF0685147DF88A00BF67C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BEEF06AB147DF8DF00BF67C5 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libglib.framework; sourceTree = "<group>"; };
+		BEEF06AC147DF8DF00BF67C5 /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libgmodule.framework; sourceTree = "<group>"; };
+		BEEF06AD147DF8DF00BF67C5 /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpurple.framework; sourceTree = "<group>"; };
+		BEEF06B1147DF94500BF67C5 /* buddy_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_info.c; sourceTree = "<group>"; };
+		BEEF06B2147DF94500BF67C5 /* buddy_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_info.h; sourceTree = "<group>"; };
+		BEEF06B3147DF94500BF67C5 /* buddy_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_list.c; sourceTree = "<group>"; };
+		BEEF06B4147DF94500BF67C5 /* buddy_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_list.h; sourceTree = "<group>"; };
+		BEEF06B5147DF94500BF67C5 /* buddy_memo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_memo.c; sourceTree = "<group>"; };
+		BEEF06B6147DF94500BF67C5 /* buddy_memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_memo.h; sourceTree = "<group>"; };
+		BEEF06B7147DF94500BF67C5 /* buddy_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_opt.c; sourceTree = "<group>"; };
+		BEEF06B8147DF94500BF67C5 /* buddy_opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_opt.h; sourceTree = "<group>"; };
+		BEEF06B9147DF94500BF67C5 /* char_conv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = char_conv.c; sourceTree = "<group>"; };
+		BEEF06BA147DF94500BF67C5 /* char_conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = char_conv.h; sourceTree = "<group>"; };
+		BEEF06BD147DF94500BF67C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		BEEF06BE147DF94500BF67C5 /* file_trans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file_trans.c; sourceTree = "<group>"; };
+		BEEF06BF147DF94500BF67C5 /* file_trans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_trans.h; sourceTree = "<group>"; };
+		BEEF06C0147DF94500BF67C5 /* group_im.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_im.c; sourceTree = "<group>"; };
+		BEEF06C1147DF94500BF67C5 /* group_im.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_im.h; sourceTree = "<group>"; };
+		BEEF06C2147DF94500BF67C5 /* group_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_info.c; sourceTree = "<group>"; };
+		BEEF06C3147DF94500BF67C5 /* group_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_info.h; sourceTree = "<group>"; };
+		BEEF06C4147DF94500BF67C5 /* group_internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_internal.c; sourceTree = "<group>"; };
+		BEEF06C5147DF94500BF67C5 /* group_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_internal.h; sourceTree = "<group>"; };
+		BEEF06C6147DF94500BF67C5 /* group_join.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_join.c; sourceTree = "<group>"; };
+		BEEF06C7147DF94500BF67C5 /* group_join.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_join.h; sourceTree = "<group>"; };
+		BEEF06C8147DF94500BF67C5 /* group_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_opt.c; sourceTree = "<group>"; };
+		BEEF06C9147DF94500BF67C5 /* group_opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_opt.h; sourceTree = "<group>"; };
+		BEEF06CA147DF94500BF67C5 /* group.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group.c; sourceTree = "<group>"; };
+		BEEF06CB147DF94500BF67C5 /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		BEEF06CC147DF94500BF67C5 /* im.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = im.c; sourceTree = "<group>"; };
+		BEEF06CD147DF94500BF67C5 /* im.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = im.h; sourceTree = "<group>"; };
+		BEEF06CF147DF94500BF67C5 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		BEEF06D0147DF94500BF67C5 /* packet_parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = packet_parse.c; sourceTree = "<group>"; };
+		BEEF06D1147DF94500BF67C5 /* packet_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packet_parse.h; sourceTree = "<group>"; };
+		BEEF06D2147DF94500BF67C5 /* qq_base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_base.c; sourceTree = "<group>"; };
+		BEEF06D3147DF94500BF67C5 /* qq_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_base.h; sourceTree = "<group>"; };
+		BEEF06D4147DF94500BF67C5 /* qq_crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_crypt.c; sourceTree = "<group>"; };
+		BEEF06D5147DF94500BF67C5 /* qq_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_crypt.h; sourceTree = "<group>"; };
+		BEEF06D6147DF94500BF67C5 /* qq_define.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_define.c; sourceTree = "<group>"; };
+		BEEF06D7147DF94500BF67C5 /* qq_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_define.h; sourceTree = "<group>"; };
+		BEEF06D8147DF94500BF67C5 /* qq_network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_network.c; sourceTree = "<group>"; };
+		BEEF06D9147DF94500BF67C5 /* qq_network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_network.h; sourceTree = "<group>"; };
+		BEEF06DA147DF94500BF67C5 /* qq_process.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_process.c; sourceTree = "<group>"; };
+		BEEF06DB147DF94500BF67C5 /* qq_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_process.h; sourceTree = "<group>"; };
+		BEEF06DC147DF94500BF67C5 /* qq_trans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_trans.c; sourceTree = "<group>"; };
+		BEEF06DD147DF94500BF67C5 /* qq_trans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_trans.h; sourceTree = "<group>"; };
+		BEEF06DE147DF94500BF67C5 /* qq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq.c; sourceTree = "<group>"; };
+		BEEF06DF147DF94500BF67C5 /* qq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq.h; sourceTree = "<group>"; };
+		BEEF06E0147DF94500BF67C5 /* send_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_file.c; sourceTree = "<group>"; };
+		BEEF06E1147DF94500BF67C5 /* send_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_file.h; sourceTree = "<group>"; };
+		BEEF06E2147DF94500BF67C5 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		BEEF06E3147DF94500BF67C5 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEEF0668147DF88900BF67C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEF0670147DF88900BF67C5 /* Cocoa.framework in Frameworks */,
+				BEEF06AE147DF8DF00BF67C5 /* libglib.framework in Frameworks */,
+				BEEF06AF147DF8DF00BF67C5 /* libgmodule.framework in Frameworks */,
+				BEEF06B0147DF8DF00BF67C5 /* libpurple.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEEF0660147DF88900BF67C5 = {
+			isa = PBXGroup;
+			children = (
+				BEEF0675147DF88900BF67C5 /* libqq-pidgin */,
+				BEEF066E147DF88900BF67C5 /* Frameworks */,
+				BEEF066D147DF88900BF67C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEEF066D147DF88900BF67C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF066C147DF88900BF67C5 /* libqq-pidgin.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEEF066E147DF88900BF67C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF06AB147DF8DF00BF67C5 /* libglib.framework */,
+				BEEF06AC147DF8DF00BF67C5 /* libgmodule.framework */,
+				BEEF06AD147DF8DF00BF67C5 /* libpurple.framework */,
+				BEEF066F147DF88900BF67C5 /* Cocoa.framework */,
+				BEEF0685147DF88A00BF67C5 /* SenTestingKit.framework */,
+				BEEF0671147DF88900BF67C5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEEF0671147DF88900BF67C5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF0672147DF88900BF67C5 /* AppKit.framework */,
+				BEEF0673147DF88900BF67C5 /* CoreData.framework */,
+				BEEF0674147DF88900BF67C5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BEEF0675147DF88900BF67C5 /* libqq-pidgin */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF06B1147DF94500BF67C5 /* buddy_info.c */,
+				BEEF06B2147DF94500BF67C5 /* buddy_info.h */,
+				BEEF06B3147DF94500BF67C5 /* buddy_list.c */,
+				BEEF06B4147DF94500BF67C5 /* buddy_list.h */,
+				BEEF06B5147DF94500BF67C5 /* buddy_memo.c */,
+				BEEF06B6147DF94500BF67C5 /* buddy_memo.h */,
+				BEEF06B7147DF94500BF67C5 /* buddy_opt.c */,
+				BEEF06B8147DF94500BF67C5 /* buddy_opt.h */,
+				BEEF06B9147DF94500BF67C5 /* char_conv.c */,
+				BEEF06BA147DF94500BF67C5 /* char_conv.h */,
+				BEEF06BB147DF94500BF67C5 /* en.lproj */,
+				BEEF06BE147DF94500BF67C5 /* file_trans.c */,
+				BEEF06BF147DF94500BF67C5 /* file_trans.h */,
+				BEEF06C0147DF94500BF67C5 /* group_im.c */,
+				BEEF06C1147DF94500BF67C5 /* group_im.h */,
+				BEEF06C2147DF94500BF67C5 /* group_info.c */,
+				BEEF06C3147DF94500BF67C5 /* group_info.h */,
+				BEEF06C4147DF94500BF67C5 /* group_internal.c */,
+				BEEF06C5147DF94500BF67C5 /* group_internal.h */,
+				BEEF06C6147DF94500BF67C5 /* group_join.c */,
+				BEEF06C7147DF94500BF67C5 /* group_join.h */,
+				BEEF06C8147DF94500BF67C5 /* group_opt.c */,
+				BEEF06C9147DF94500BF67C5 /* group_opt.h */,
+				BEEF06CA147DF94500BF67C5 /* group.c */,
+				BEEF06CB147DF94500BF67C5 /* group.h */,
+				BEEF06CC147DF94500BF67C5 /* im.c */,
+				BEEF06CD147DF94500BF67C5 /* im.h */,
+				BEEF06CE147DF94500BF67C5 /* libpurple */,
+				BEEF06D0147DF94500BF67C5 /* packet_parse.c */,
+				BEEF06D1147DF94500BF67C5 /* packet_parse.h */,
+				BEEF06D2147DF94500BF67C5 /* qq_base.c */,
+				BEEF06D3147DF94500BF67C5 /* qq_base.h */,
+				BEEF06D4147DF94500BF67C5 /* qq_crypt.c */,
+				BEEF06D5147DF94500BF67C5 /* qq_crypt.h */,
+				BEEF06D6147DF94500BF67C5 /* qq_define.c */,
+				BEEF06D7147DF94500BF67C5 /* qq_define.h */,
+				BEEF06D8147DF94500BF67C5 /* qq_network.c */,
+				BEEF06D9147DF94500BF67C5 /* qq_network.h */,
+				BEEF06DA147DF94500BF67C5 /* qq_process.c */,
+				BEEF06DB147DF94500BF67C5 /* qq_process.h */,
+				BEEF06DC147DF94500BF67C5 /* qq_trans.c */,
+				BEEF06DD147DF94500BF67C5 /* qq_trans.h */,
+				BEEF06DE147DF94500BF67C5 /* qq.c */,
+				BEEF06DF147DF94500BF67C5 /* qq.h */,
+				BEEF06E0147DF94500BF67C5 /* send_file.c */,
+				BEEF06E1147DF94500BF67C5 /* send_file.h */,
+				BEEF06E2147DF94500BF67C5 /* utils.c */,
+				BEEF06E3147DF94500BF67C5 /* utils.h */,
+				BEEF0676147DF88900BF67C5 /* Supporting Files */,
+			);
+			path = "libqq-pidgin";
+			sourceTree = "<group>";
+		};
+		BEEF0676147DF88900BF67C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF0677147DF88900BF67C5 /* libqq-pidgin-Info.plist */,
+				BEEF0678147DF88900BF67C5 /* InfoPlist.strings */,
+				BEEF067B147DF88900BF67C5 /* libqq-pidgin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEEF06BB147DF94500BF67C5 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF06BC147DF94500BF67C5 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		BEEF06CE147DF94500BF67C5 /* libpurple */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF06CF147DF94500BF67C5 /* internal.h */,
+			);
+			path = libpurple;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BEEF0669147DF88900BF67C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEF06E5147DF94500BF67C5 /* buddy_info.h in Headers */,
+				BEEF06E7147DF94500BF67C5 /* buddy_list.h in Headers */,
+				BEEF06E9147DF94500BF67C5 /* buddy_memo.h in Headers */,
+				BEEF06EB147DF94500BF67C5 /* buddy_opt.h in Headers */,
+				BEEF06ED147DF94500BF67C5 /* char_conv.h in Headers */,
+				BEEF06F0147DF94500BF67C5 /* file_trans.h in Headers */,
+				BEEF06F2147DF94500BF67C5 /* group_im.h in Headers */,
+				BEEF06F4147DF94500BF67C5 /* group_info.h in Headers */,
+				BEEF06F6147DF94500BF67C5 /* group_internal.h in Headers */,
+				BEEF06F8147DF94500BF67C5 /* group_join.h in Headers */,
+				BEEF06FA147DF94500BF67C5 /* group_opt.h in Headers */,
+				BEEF06FC147DF94500BF67C5 /* group.h in Headers */,
+				BEEF06FE147DF94500BF67C5 /* im.h in Headers */,
+				BEEF06FF147DF94500BF67C5 /* internal.h in Headers */,
+				BEEF0701147DF94500BF67C5 /* packet_parse.h in Headers */,
+				BEEF0703147DF94500BF67C5 /* qq_base.h in Headers */,
+				BEEF0705147DF94500BF67C5 /* qq_crypt.h in Headers */,
+				BEEF0707147DF94500BF67C5 /* qq_define.h in Headers */,
+				BEEF0709147DF94500BF67C5 /* qq_network.h in Headers */,
+				BEEF070B147DF94500BF67C5 /* qq_process.h in Headers */,
+				BEEF070D147DF94500BF67C5 /* qq_trans.h in Headers */,
+				BEEF070F147DF94500BF67C5 /* qq.h in Headers */,
+				BEEF0711147DF94500BF67C5 /* send_file.h in Headers */,
+				BEEF0713147DF94500BF67C5 /* utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BEEF066B147DF88900BF67C5 /* libqq-pidgin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEF0696147DF88A00BF67C5 /* Build configuration list for PBXNativeTarget "libqq-pidgin" */;
+			buildPhases = (
+				BEEF0667147DF88900BF67C5 /* Sources */,
+				BEEF0668147DF88900BF67C5 /* Frameworks */,
+				BEEF0669147DF88900BF67C5 /* Headers */,
+				BEEF066A147DF88900BF67C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libqq-pidgin";
+			productName = "libqq-pidgin";
+			productReference = BEEF066C147DF88900BF67C5 /* libqq-pidgin.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEEF0662147DF88900BF67C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Rochester Institute of Technology";
+			};
+			buildConfigurationList = BEEF0665147DF88900BF67C5 /* Build configuration list for PBXProject "libqq-pidgin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEEF0660147DF88900BF67C5;
+			productRefGroup = BEEF066D147DF88900BF67C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEEF066B147DF88900BF67C5 /* libqq-pidgin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEEF066A147DF88900BF67C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEF067A147DF88900BF67C5 /* InfoPlist.strings in Resources */,
+				BEEF06EE147DF94500BF67C5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEEF0667147DF88900BF67C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEF06E4147DF94500BF67C5 /* buddy_info.c in Sources */,
+				BEEF06E6147DF94500BF67C5 /* buddy_list.c in Sources */,
+				BEEF06E8147DF94500BF67C5 /* buddy_memo.c in Sources */,
+				BEEF06EA147DF94500BF67C5 /* buddy_opt.c in Sources */,
+				BEEF06EC147DF94500BF67C5 /* char_conv.c in Sources */,
+				BEEF06EF147DF94500BF67C5 /* file_trans.c in Sources */,
+				BEEF06F1147DF94500BF67C5 /* group_im.c in Sources */,
+				BEEF06F3147DF94500BF67C5 /* group_info.c in Sources */,
+				BEEF06F5147DF94500BF67C5 /* group_internal.c in Sources */,
+				BEEF06F7147DF94500BF67C5 /* group_join.c in Sources */,
+				BEEF06F9147DF94500BF67C5 /* group_opt.c in Sources */,
+				BEEF06FB147DF94500BF67C5 /* group.c in Sources */,
+				BEEF06FD147DF94500BF67C5 /* im.c in Sources */,
+				BEEF0700147DF94500BF67C5 /* packet_parse.c in Sources */,
+				BEEF0702147DF94500BF67C5 /* qq_base.c in Sources */,
+				BEEF0704147DF94500BF67C5 /* qq_crypt.c in Sources */,
+				BEEF0706147DF94500BF67C5 /* qq_define.c in Sources */,
+				BEEF0708147DF94500BF67C5 /* qq_network.c in Sources */,
+				BEEF070A147DF94500BF67C5 /* qq_process.c in Sources */,
+				BEEF070C147DF94500BF67C5 /* qq_trans.c in Sources */,
+				BEEF070E147DF94500BF67C5 /* qq.c in Sources */,
+				BEEF0710147DF94500BF67C5 /* send_file.c in Sources */,
+				BEEF0712147DF94500BF67C5 /* utils.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEEF0678147DF88900BF67C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF0679147DF88900BF67C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEEF06BC147DF94500BF67C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF06BD147DF94500BF67C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEEF0694147DF88A00BF67C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"QQ_BUDDY_ICON_DIR=$(HOME)/.adium/QQ",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libpurple.framework/Headers",
+					"$(SRCROOT)/libgmodule.framework/Headers",
+					"$(SRCROOT)/libglib.framework/Headers",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEEF0695147DF88A00BF67C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "QQ_BUDDY_ICON_DIR=$(HOME)/.adium/QQ";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libpurple.framework/Headers",
+					"$(SRCROOT)/libgmodule.framework/Headers",
+					"$(SRCROOT)/libglib.framework/Headers",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEEF0697147DF88A00BF67C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../..\"",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libqq-pidgin/libqq-pidgin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/.adium/QQ\\\"\"",
+				);
+				INFOPLIST_FILE = "libqq-pidgin/libqq-pidgin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		BEEF0698147DF88A00BF67C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../..\"",
+					"\"$(SRCROOT)\"",
+				);
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libqq-pidgin/libqq-pidgin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/.adium/QQ\\\"\"";
+				INFOPLIST_FILE = "libqq-pidgin/libqq-pidgin-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEEF0665147DF88900BF67C5 /* Build configuration list for PBXProject "libqq-pidgin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEF0694147DF88A00BF67C5 /* Debug */,
+				BEEF0695147DF88A00BF67C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEEF0696147DF88A00BF67C5 /* Build configuration list for PBXNativeTarget "libqq-pidgin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEF0697147DF88A00BF67C5 /* Debug */,
+				BEEF0698147DF88A00BF67C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEEF0662147DF88900BF67C5 /* Project object */;
+}
