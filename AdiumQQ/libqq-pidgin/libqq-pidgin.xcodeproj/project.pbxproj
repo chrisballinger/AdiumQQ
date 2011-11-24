@@ -71,7 +71,6 @@
 		BEEF0677147DF88900BF67C5 /* libqq-pidgin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "libqq-pidgin-Info.plist"; sourceTree = "<group>"; };
 		BEEF0679147DF88900BF67C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BEEF067B147DF88900BF67C5 /* libqq-pidgin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libqq-pidgin-Prefix.pch"; sourceTree = "<group>"; };
-		BEEF0685147DF88A00BF67C5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BEEF06AB147DF8DF00BF67C5 /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libglib.framework; sourceTree = "<group>"; };
 		BEEF06AC147DF8DF00BF67C5 /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libgmodule.framework; sourceTree = "<group>"; };
 		BEEF06AD147DF8DF00BF67C5 /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libpurple.framework; sourceTree = "<group>"; };
@@ -164,7 +163,6 @@
 				BEEF06AC147DF8DF00BF67C5 /* libgmodule.framework */,
 				BEEF06AD147DF8DF00BF67C5 /* libpurple.framework */,
 				BEEF066F147DF88900BF67C5 /* Cocoa.framework */,
-				BEEF0685147DF88A00BF67C5 /* SenTestingKit.framework */,
 				BEEF0671147DF88900BF67C5 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -482,6 +480,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/.adium/QQ\\\"\"",
+					"PURPLE_STATIC_PRPL=1",
 				);
 				INFOPLIST_FILE = "libqq-pidgin/libqq-pidgin-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -502,7 +501,10 @@
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "libqq-pidgin/libqq-pidgin-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = "QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/.adium/QQ\\\"\"";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"PURPLE_STATIC_PRPL=1",
+					"QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/.adium/QQ\\\"\"",
+				);
 				INFOPLIST_FILE = "libqq-pidgin/libqq-pidgin-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;

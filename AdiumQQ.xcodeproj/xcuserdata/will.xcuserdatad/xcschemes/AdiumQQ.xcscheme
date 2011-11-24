@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BEEF0640147DF61400BF67C5"
-               BuildableName = "AdiumQQ.AdiumPlugin"
+               BuildableName = "AdiumQQ.AdiumLibpurplePlugin"
                BlueprintName = "AdiumQQ"
                ReferencedContainer = "container:AdiumQQ.xcodeproj">
             </BuildableReference>

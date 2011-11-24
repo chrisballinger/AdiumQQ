@@ -7,32 +7,113 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE776A4B147E133E00639B1C /* libqq-pidgin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF06A2147DF88B00BF67C5 /* libqq-pidgin.framework */; };
+		BE991A83147E17E200645C2C /* QQAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BE991A7E147E17E200645C2C /* QQAccount.m */; };
+		BE991A84147E17E200645C2C /* QQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BE991A80147E17E200645C2C /* QQPlugin.m */; };
+		BE991A85147E17E200645C2C /* QQService.m in Sources */ = {isa = PBXBuildFile; fileRef = BE991A82147E17E200645C2C /* QQService.m */; };
+		BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A86147E19CB00645C2C /* libpurple.framework */; };
+		BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A88147E1A2000645C2C /* libglib.framework */; };
+		BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991BE6147E395700645C2C /* AIUtilities.framework */; };
+		BEE096D4147E43FC00F9A993 /* buddy_info.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE0969C147E43FC00F9A993 /* buddy_info.c */; };
+		BEE096D5147E43FC00F9A993 /* buddy_list.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE0969E147E43FC00F9A993 /* buddy_list.c */; };
+		BEE096D6147E43FC00F9A993 /* buddy_memo.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096A0147E43FC00F9A993 /* buddy_memo.c */; };
+		BEE096D7147E43FC00F9A993 /* buddy_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096A2147E43FC00F9A993 /* buddy_opt.c */; };
+		BEE096D8147E43FC00F9A993 /* char_conv.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096A4147E43FC00F9A993 /* char_conv.c */; };
+		BEE096D9147E43FC00F9A993 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE096CD147E43FC00F9A993 /* InfoPlist.strings */; };
+		BEE096DA147E43FC00F9A993 /* file_trans.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096A7147E43FC00F9A993 /* file_trans.c */; };
+		BEE096DB147E43FC00F9A993 /* group_im.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096A9147E43FC00F9A993 /* group_im.c */; };
+		BEE096DC147E43FC00F9A993 /* group_info.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096AB147E43FC00F9A993 /* group_info.c */; };
+		BEE096DD147E43FC00F9A993 /* group_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096AD147E43FC00F9A993 /* group_internal.c */; };
+		BEE096DE147E43FC00F9A993 /* group_join.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096AF147E43FC00F9A993 /* group_join.c */; };
+		BEE096DF147E43FC00F9A993 /* group_opt.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096B1147E43FC00F9A993 /* group_opt.c */; };
+		BEE096E0147E43FC00F9A993 /* group.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096B3147E43FC00F9A993 /* group.c */; };
+		BEE096E1147E43FC00F9A993 /* im.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096B5147E43FC00F9A993 /* im.c */; };
+		BEE096E2147E43FC00F9A993 /* packet_parse.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096B8147E43FC00F9A993 /* packet_parse.c */; };
+		BEE096E3147E43FC00F9A993 /* qq_base.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096BA147E43FC00F9A993 /* qq_base.c */; };
+		BEE096E4147E43FC00F9A993 /* qq_crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096BC147E43FC00F9A993 /* qq_crypt.c */; };
+		BEE096E5147E43FC00F9A993 /* qq_define.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096BE147E43FC00F9A993 /* qq_define.c */; };
+		BEE096E6147E43FC00F9A993 /* qq_network.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096C0147E43FC00F9A993 /* qq_network.c */; };
+		BEE096E7147E43FC00F9A993 /* qq_process.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096C2147E43FC00F9A993 /* qq_process.c */; };
+		BEE096E8147E43FC00F9A993 /* qq_trans.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096C4147E43FC00F9A993 /* qq_trans.c */; };
+		BEE096E9147E43FC00F9A993 /* qq.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096C6147E43FC00F9A993 /* qq.c */; };
+		BEE096EA147E43FC00F9A993 /* send_file.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096C8147E43FC00F9A993 /* send_file.c */; };
+		BEE096EB147E43FC00F9A993 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096CA147E43FC00F9A993 /* utils.c */; };
+		BEE096EC147E43FC00F9A993 /* libqq-pidgin-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEE096D0147E43FC00F9A993 /* libqq-pidgin-Info.plist */; };
+		BEE096ED147E43FC00F9A993 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE096D1147E43FC00F9A993 /* InfoPlist.strings */; };
+		BEE097C6147E44D000F9A993 /* libgmodule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE09769147E44CF00F9A993 /* libgmodule.framework */; };
+		BEE097C7147E44D000F9A993 /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0976A147E44CF00F9A993 /* libintl.framework */; };
+		BEE097C8147E44D000F9A993 /* libmeanwhile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE0976B147E44CF00F9A993 /* libmeanwhile.framework */; };
 		BEEF0645147DF61500BF67C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0644147DF61500BF67C5 /* Cocoa.framework */; };
 		BEEF064F147DF61500BF67C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF064D147DF61500BF67C5 /* InfoPlist.strings */; };
 		BEEF0658147DF72A00BF67C5 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0656147DF72A00BF67C5 /* Adium.framework */; };
 		BEEF0659147DF72A00BF67C5 /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BEEF06A1147DF88B00BF67C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEEF069C147DF88A00BF67C5 /* libqq-pidgin.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BEEF066C147DF88900BF67C5;
-			remoteInfo = "libqq-pidgin";
-		};
-		BEEF0714147DFA1000BF67C5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEEF069C147DF88A00BF67C5 /* libqq-pidgin.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BEEF066B147DF88900BF67C5;
-			remoteInfo = "libqq-pidgin";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumQQ.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE991A7D147E17E200645C2C /* QQAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QQAccount.h; path = "../../libqq-adium/libqq-adium/QQAccount.h"; sourceTree = "<group>"; };
+		BE991A7E147E17E200645C2C /* QQAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QQAccount.m; path = "../../libqq-adium/libqq-adium/QQAccount.m"; sourceTree = "<group>"; };
+		BE991A7F147E17E200645C2C /* QQPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QQPlugin.h; path = "../../libqq-adium/libqq-adium/QQPlugin.h"; sourceTree = "<group>"; };
+		BE991A80147E17E200645C2C /* QQPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QQPlugin.m; path = "../../libqq-adium/libqq-adium/QQPlugin.m"; sourceTree = "<group>"; };
+		BE991A81147E17E200645C2C /* QQService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QQService.h; path = "../../libqq-adium/libqq-adium/QQService.h"; sourceTree = "<group>"; };
+		BE991A82147E17E200645C2C /* QQService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QQService.m; path = "../../libqq-adium/libqq-adium/QQService.m"; sourceTree = "<group>"; };
+		BE991A86147E19CB00645C2C /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = "AdiumQQ/libqq-pidgin/libpurple.framework"; sourceTree = "<group>"; };
+		BE991A88147E1A2000645C2C /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = "AdiumQQ/libqq-pidgin/libglib.framework"; sourceTree = "<group>"; };
+		BE991BE6147E395700645C2C /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug/AIUtilities.framework"; sourceTree = "<group>"; };
+		BEE0969C147E43FC00F9A993 /* buddy_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_info.c; sourceTree = "<group>"; };
+		BEE0969D147E43FC00F9A993 /* buddy_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_info.h; sourceTree = "<group>"; };
+		BEE0969E147E43FC00F9A993 /* buddy_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_list.c; sourceTree = "<group>"; };
+		BEE0969F147E43FC00F9A993 /* buddy_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_list.h; sourceTree = "<group>"; };
+		BEE096A0147E43FC00F9A993 /* buddy_memo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_memo.c; sourceTree = "<group>"; };
+		BEE096A1147E43FC00F9A993 /* buddy_memo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_memo.h; sourceTree = "<group>"; };
+		BEE096A2147E43FC00F9A993 /* buddy_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_opt.c; sourceTree = "<group>"; };
+		BEE096A3147E43FC00F9A993 /* buddy_opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_opt.h; sourceTree = "<group>"; };
+		BEE096A4147E43FC00F9A993 /* char_conv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = char_conv.c; sourceTree = "<group>"; };
+		BEE096A5147E43FC00F9A993 /* char_conv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = char_conv.h; sourceTree = "<group>"; };
+		BEE096A7147E43FC00F9A993 /* file_trans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = file_trans.c; sourceTree = "<group>"; };
+		BEE096A8147E43FC00F9A993 /* file_trans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_trans.h; sourceTree = "<group>"; };
+		BEE096A9147E43FC00F9A993 /* group_im.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_im.c; sourceTree = "<group>"; };
+		BEE096AA147E43FC00F9A993 /* group_im.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_im.h; sourceTree = "<group>"; };
+		BEE096AB147E43FC00F9A993 /* group_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_info.c; sourceTree = "<group>"; };
+		BEE096AC147E43FC00F9A993 /* group_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_info.h; sourceTree = "<group>"; };
+		BEE096AD147E43FC00F9A993 /* group_internal.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_internal.c; sourceTree = "<group>"; };
+		BEE096AE147E43FC00F9A993 /* group_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_internal.h; sourceTree = "<group>"; };
+		BEE096AF147E43FC00F9A993 /* group_join.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_join.c; sourceTree = "<group>"; };
+		BEE096B0147E43FC00F9A993 /* group_join.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_join.h; sourceTree = "<group>"; };
+		BEE096B1147E43FC00F9A993 /* group_opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group_opt.c; sourceTree = "<group>"; };
+		BEE096B2147E43FC00F9A993 /* group_opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group_opt.h; sourceTree = "<group>"; };
+		BEE096B3147E43FC00F9A993 /* group.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = group.c; sourceTree = "<group>"; };
+		BEE096B4147E43FC00F9A993 /* group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = group.h; sourceTree = "<group>"; };
+		BEE096B5147E43FC00F9A993 /* im.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = im.c; sourceTree = "<group>"; };
+		BEE096B6147E43FC00F9A993 /* im.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = im.h; sourceTree = "<group>"; };
+		BEE096B8147E43FC00F9A993 /* packet_parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = packet_parse.c; sourceTree = "<group>"; };
+		BEE096B9147E43FC00F9A993 /* packet_parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packet_parse.h; sourceTree = "<group>"; };
+		BEE096BA147E43FC00F9A993 /* qq_base.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_base.c; sourceTree = "<group>"; };
+		BEE096BB147E43FC00F9A993 /* qq_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_base.h; sourceTree = "<group>"; };
+		BEE096BC147E43FC00F9A993 /* qq_crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_crypt.c; sourceTree = "<group>"; };
+		BEE096BD147E43FC00F9A993 /* qq_crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_crypt.h; sourceTree = "<group>"; };
+		BEE096BE147E43FC00F9A993 /* qq_define.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_define.c; sourceTree = "<group>"; };
+		BEE096BF147E43FC00F9A993 /* qq_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_define.h; sourceTree = "<group>"; };
+		BEE096C0147E43FC00F9A993 /* qq_network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_network.c; sourceTree = "<group>"; };
+		BEE096C1147E43FC00F9A993 /* qq_network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_network.h; sourceTree = "<group>"; };
+		BEE096C2147E43FC00F9A993 /* qq_process.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_process.c; sourceTree = "<group>"; };
+		BEE096C3147E43FC00F9A993 /* qq_process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_process.h; sourceTree = "<group>"; };
+		BEE096C4147E43FC00F9A993 /* qq_trans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq_trans.c; sourceTree = "<group>"; };
+		BEE096C5147E43FC00F9A993 /* qq_trans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq_trans.h; sourceTree = "<group>"; };
+		BEE096C6147E43FC00F9A993 /* qq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = qq.c; sourceTree = "<group>"; };
+		BEE096C7147E43FC00F9A993 /* qq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = qq.h; sourceTree = "<group>"; };
+		BEE096C8147E43FC00F9A993 /* send_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_file.c; sourceTree = "<group>"; };
+		BEE096C9147E43FC00F9A993 /* send_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_file.h; sourceTree = "<group>"; };
+		BEE096CA147E43FC00F9A993 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		BEE096CB147E43FC00F9A993 /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		BEE096CE147E43FC00F9A993 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		BEE096CF147E43FC00F9A993 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		BEE096D0147E43FC00F9A993 /* libqq-pidgin-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "libqq-pidgin-Info.plist"; sourceTree = "<group>"; };
+		BEE096D2147E43FC00F9A993 /* libqq-pidgin-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "libqq-pidgin-Prefix.pch"; sourceTree = "<group>"; };
+		BEE096D3147E43FC00F9A993 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEE096EE147E440B00F9A993 /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgmodule.framework; path = "AdiumQQ/libqq-pidgin/libgmodule.framework"; sourceTree = "<group>"; };
+		BEE09769147E44CF00F9A993 /* libgmodule.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgmodule.framework; path = ../adium/Frameworks/libgmodule.framework; sourceTree = "<group>"; };
+		BEE0976A147E44CF00F9A993 /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libintl.framework; path = ../adium/Frameworks/libintl.framework; sourceTree = "<group>"; };
+		BEE0976B147E44CF00F9A993 /* libmeanwhile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libmeanwhile.framework; path = ../adium/Frameworks/libmeanwhile.framework; sourceTree = "<group>"; };
+		BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumLibpurplePlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumQQ.AdiumLibpurplePlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEF0644147DF61500BF67C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BEEF0647147DF61500BF67C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		BEEF0648147DF61500BF67C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -42,7 +123,6 @@
 		BEEF0650147DF61500BF67C5 /* AdiumQQ-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdiumQQ-Prefix.pch"; sourceTree = "<group>"; };
 		BEEF0656147DF72A00BF67C5 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Adium.framework; sourceTree = "<group>"; };
 		BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdiumLibpurple.framework; sourceTree = "<group>"; };
-		BEEF069C147DF88A00BF67C5 /* libqq-pidgin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "libqq-pidgin.xcodeproj"; path = "libqq-pidgin/libqq-pidgin.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,19 +130,108 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE776A4B147E133E00639B1C /* libqq-pidgin.framework in Frameworks */,
 				BEEF0645147DF61500BF67C5 /* Cocoa.framework in Frameworks */,
+				BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */,
+				BEE097C6147E44D000F9A993 /* libgmodule.framework in Frameworks */,
+				BEE097C7147E44D000F9A993 /* libintl.framework in Frameworks */,
+				BEE097C8147E44D000F9A993 /* libmeanwhile.framework in Frameworks */,
+				BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */,
 				BEEF0658147DF72A00BF67C5 /* Adium.framework in Frameworks */,
 				BEEF0659147DF72A00BF67C5 /* AdiumLibpurple.framework in Frameworks */,
+				BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEE0969B147E43FC00F9A993 /* libqq-pidgin */ = {
+			isa = PBXGroup;
+			children = (
+				BEE0969C147E43FC00F9A993 /* buddy_info.c */,
+				BEE0969D147E43FC00F9A993 /* buddy_info.h */,
+				BEE0969E147E43FC00F9A993 /* buddy_list.c */,
+				BEE0969F147E43FC00F9A993 /* buddy_list.h */,
+				BEE096A0147E43FC00F9A993 /* buddy_memo.c */,
+				BEE096A1147E43FC00F9A993 /* buddy_memo.h */,
+				BEE096A2147E43FC00F9A993 /* buddy_opt.c */,
+				BEE096A3147E43FC00F9A993 /* buddy_opt.h */,
+				BEE096A4147E43FC00F9A993 /* char_conv.c */,
+				BEE096A5147E43FC00F9A993 /* char_conv.h */,
+				BEE096A6147E43FC00F9A993 /* en.lproj */,
+				BEE096A7147E43FC00F9A993 /* file_trans.c */,
+				BEE096A8147E43FC00F9A993 /* file_trans.h */,
+				BEE096A9147E43FC00F9A993 /* group_im.c */,
+				BEE096AA147E43FC00F9A993 /* group_im.h */,
+				BEE096AB147E43FC00F9A993 /* group_info.c */,
+				BEE096AC147E43FC00F9A993 /* group_info.h */,
+				BEE096AD147E43FC00F9A993 /* group_internal.c */,
+				BEE096AE147E43FC00F9A993 /* group_internal.h */,
+				BEE096AF147E43FC00F9A993 /* group_join.c */,
+				BEE096B0147E43FC00F9A993 /* group_join.h */,
+				BEE096B1147E43FC00F9A993 /* group_opt.c */,
+				BEE096B2147E43FC00F9A993 /* group_opt.h */,
+				BEE096B3147E43FC00F9A993 /* group.c */,
+				BEE096B4147E43FC00F9A993 /* group.h */,
+				BEE096B5147E43FC00F9A993 /* im.c */,
+				BEE096B6147E43FC00F9A993 /* im.h */,
+				BEE096B7147E43FC00F9A993 /* libpurple */,
+				BEE096B8147E43FC00F9A993 /* packet_parse.c */,
+				BEE096B9147E43FC00F9A993 /* packet_parse.h */,
+				BEE096BA147E43FC00F9A993 /* qq_base.c */,
+				BEE096BB147E43FC00F9A993 /* qq_base.h */,
+				BEE096BC147E43FC00F9A993 /* qq_crypt.c */,
+				BEE096BD147E43FC00F9A993 /* qq_crypt.h */,
+				BEE096BE147E43FC00F9A993 /* qq_define.c */,
+				BEE096BF147E43FC00F9A993 /* qq_define.h */,
+				BEE096C0147E43FC00F9A993 /* qq_network.c */,
+				BEE096C1147E43FC00F9A993 /* qq_network.h */,
+				BEE096C2147E43FC00F9A993 /* qq_process.c */,
+				BEE096C3147E43FC00F9A993 /* qq_process.h */,
+				BEE096C4147E43FC00F9A993 /* qq_trans.c */,
+				BEE096C5147E43FC00F9A993 /* qq_trans.h */,
+				BEE096C6147E43FC00F9A993 /* qq.c */,
+				BEE096C7147E43FC00F9A993 /* qq.h */,
+				BEE096C8147E43FC00F9A993 /* send_file.c */,
+				BEE096C9147E43FC00F9A993 /* send_file.h */,
+				BEE096CA147E43FC00F9A993 /* utils.c */,
+				BEE096CB147E43FC00F9A993 /* utils.h */,
+				BEE096CC147E43FC00F9A993 /* Supporting Files */,
+			);
+			name = "libqq-pidgin";
+			path = "AdiumQQ/libqq-pidgin/libqq-pidgin";
+			sourceTree = "<group>";
+		};
+		BEE096A6147E43FC00F9A993 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				BEE096CD147E43FC00F9A993 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		BEE096B7147E43FC00F9A993 /* libpurple */ = {
+			isa = PBXGroup;
+			children = (
+				BEE096CF147E43FC00F9A993 /* internal.h */,
+			);
+			path = libpurple;
+			sourceTree = "<group>";
+		};
+		BEE096CC147E43FC00F9A993 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEE096D0147E43FC00F9A993 /* libqq-pidgin-Info.plist */,
+				BEE096D1147E43FC00F9A993 /* InfoPlist.strings */,
+				BEE096D2147E43FC00F9A993 /* libqq-pidgin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		BEEF0636147DF61400BF67C5 = {
 			isa = PBXGroup;
 			children = (
+				BEE0969B147E43FC00F9A993 /* libqq-pidgin */,
 				BEEF064A147DF61500BF67C5 /* AdiumQQ */,
 				BEEF0643147DF61400BF67C5 /* Frameworks */,
 				BEEF0642147DF61400BF67C5 /* Products */,
@@ -72,7 +241,7 @@
 		BEEF0642147DF61400BF67C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumPlugin */,
+				BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumLibpurplePlugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +249,8 @@
 		BEEF0643147DF61400BF67C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */,
+				BEEF0656147DF72A00BF67C5 /* Adium.framework */,
 				BEEF0644147DF61500BF67C5 /* Cocoa.framework */,
 				BEEF0646147DF61500BF67C5 /* Other Frameworks */,
 			);
@@ -89,8 +260,13 @@
 		BEEF0646147DF61500BF67C5 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BEEF0656147DF72A00BF67C5 /* Adium.framework */,
-				BEEF0657147DF72A00BF67C5 /* AdiumLibpurple.framework */,
+				BEE09769147E44CF00F9A993 /* libgmodule.framework */,
+				BEE0976A147E44CF00F9A993 /* libintl.framework */,
+				BEE0976B147E44CF00F9A993 /* libmeanwhile.framework */,
+				BE991A86147E19CB00645C2C /* libpurple.framework */,
+				BEE096EE147E440B00F9A993 /* libgmodule.framework */,
+				BE991BE6147E395700645C2C /* AIUtilities.framework */,
+				BE991A88147E1A2000645C2C /* libglib.framework */,
 				BEEF0647147DF61500BF67C5 /* AppKit.framework */,
 				BEEF0648147DF61500BF67C5 /* CoreData.framework */,
 				BEEF0649147DF61500BF67C5 /* Foundation.framework */,
@@ -101,8 +277,13 @@
 		BEEF064A147DF61500BF67C5 /* AdiumQQ */ = {
 			isa = PBXGroup;
 			children = (
+				BE991A7D147E17E200645C2C /* QQAccount.h */,
+				BE991A7E147E17E200645C2C /* QQAccount.m */,
+				BE991A7F147E17E200645C2C /* QQPlugin.h */,
+				BE991A80147E17E200645C2C /* QQPlugin.m */,
+				BE991A81147E17E200645C2C /* QQService.h */,
+				BE991A82147E17E200645C2C /* QQService.m */,
 				BEEF064B147DF61500BF67C5 /* Supporting Files */,
-				BEEF069C147DF88A00BF67C5 /* libqq-pidgin.xcodeproj */,
 			);
 			path = AdiumQQ;
 			sourceTree = "<group>";
@@ -115,14 +296,6 @@
 				BEEF0650147DF61500BF67C5 /* AdiumQQ-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		BEEF069D147DF88A00BF67C5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BEEF06A2147DF88B00BF67C5 /* libqq-pidgin.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,11 +312,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				BEEF0715147DFA1000BF67C5 /* PBXTargetDependency */,
 			);
 			name = AdiumQQ;
 			productName = AdiumQQ;
-			productReference = BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumPlugin */;
+			productReference = BEEF0641147DF61400BF67C5 /* AdiumQQ.AdiumLibpurplePlugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -161,16 +333,41 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ca,
+				cs,
+				da,
+				de,
+				el_GR,
+				en_AU,
+				en_CA,
+				en_GB,
+				es,
+				fi,
+				fr,
+				fr_CA,
+				hu,
+				is,
+				it,
+				ja,
+				nb,
+				nl,
+				pl,
+				pt,
+				pt_PT,
+				ru,
+				sk_SK,
+				sl,
+				sv,
+				tr,
+				uk_UA,
+				zh_CN,
+				zh_TW,
+				English,
+				Japanese,
 			);
 			mainGroup = BEEF0636147DF61400BF67C5;
 			productRefGroup = BEEF0642147DF61400BF67C5 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = BEEF069D147DF88A00BF67C5 /* Products */;
-					ProjectRef = BEEF069C147DF88A00BF67C5 /* libqq-pidgin.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				BEEF0640147DF61400BF67C5 /* AdiumQQ */,
@@ -178,22 +375,15 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		BEEF06A2147DF88B00BF67C5 /* libqq-pidgin.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = "libqq-pidgin.framework";
-			remoteRef = BEEF06A1147DF88B00BF67C5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		BEEF063F147DF61400BF67C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BEEF064F147DF61500BF67C5 /* InfoPlist.strings in Resources */,
+				BEE096D9147E43FC00F9A993 /* InfoPlist.strings in Resources */,
+				BEE096EC147E43FC00F9A993 /* libqq-pidgin-Info.plist in Resources */,
+				BEE096ED147E43FC00F9A993 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,20 +394,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE991A83147E17E200645C2C /* QQAccount.m in Sources */,
+				BE991A85147E17E200645C2C /* QQService.m in Sources */,
+				BE991A84147E17E200645C2C /* QQPlugin.m in Sources */,
+				BEE096D4147E43FC00F9A993 /* buddy_info.c in Sources */,
+				BEE096D5147E43FC00F9A993 /* buddy_list.c in Sources */,
+				BEE096D6147E43FC00F9A993 /* buddy_memo.c in Sources */,
+				BEE096D7147E43FC00F9A993 /* buddy_opt.c in Sources */,
+				BEE096D8147E43FC00F9A993 /* char_conv.c in Sources */,
+				BEE096DA147E43FC00F9A993 /* file_trans.c in Sources */,
+				BEE096DB147E43FC00F9A993 /* group_im.c in Sources */,
+				BEE096DC147E43FC00F9A993 /* group_info.c in Sources */,
+				BEE096DD147E43FC00F9A993 /* group_internal.c in Sources */,
+				BEE096DE147E43FC00F9A993 /* group_join.c in Sources */,
+				BEE096DF147E43FC00F9A993 /* group_opt.c in Sources */,
+				BEE096E0147E43FC00F9A993 /* group.c in Sources */,
+				BEE096E1147E43FC00F9A993 /* im.c in Sources */,
+				BEE096E2147E43FC00F9A993 /* packet_parse.c in Sources */,
+				BEE096E3147E43FC00F9A993 /* qq_base.c in Sources */,
+				BEE096E4147E43FC00F9A993 /* qq_crypt.c in Sources */,
+				BEE096E5147E43FC00F9A993 /* qq_define.c in Sources */,
+				BEE096E6147E43FC00F9A993 /* qq_network.c in Sources */,
+				BEE096E7147E43FC00F9A993 /* qq_process.c in Sources */,
+				BEE096E8147E43FC00F9A993 /* qq_trans.c in Sources */,
+				BEE096E9147E43FC00F9A993 /* qq.c in Sources */,
+				BEE096EA147E43FC00F9A993 /* send_file.c in Sources */,
+				BEE096EB147E43FC00F9A993 /* utils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		BEEF0715147DFA1000BF67C5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "libqq-pidgin";
-			targetProxy = BEEF0714147DFA1000BF67C5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
+		BEE096CD147E43FC00F9A993 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE096CE147E43FC00F9A993 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEE096D1147E43FC00F9A993 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE096D3147E43FC00F9A993 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		BEEF064D147DF61500BF67C5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -251,13 +475,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/libpurple.framework/Headers",
-					"$(SRCROOT)/libgmodule.framework/Headers",
 					"$(SRCROOT)/libglib.framework/Headers",
+					"$(SRCROOT)/libpurple.framework/Headers",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdiumQQ/libqq-pidgin/libglib.framework/Headers $(SRCROOT)/libpurple.framework/Headers";
 			};
 			name = Debug;
 		};
@@ -277,12 +501,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/libpurple.framework/Headers",
-					"$(SRCROOT)/libgmodule.framework/Headers",
 					"$(SRCROOT)/libglib.framework/Headers",
+					"$(SRCROOT)/libpurple.framework/Headers",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/AdiumQQ/libqq-pidgin/libglib.framework/Headers $(SRCROOT)/libpurple.framework/Headers";
 			};
 			name = Release;
 		};
@@ -292,13 +516,27 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AdiumQQ/libqq-pidgin\"",
+					"\"$(SRCROOT)/../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../adium/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdiumQQ/AdiumQQ-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/Library/Application Support/Adium 2.0/QQ\\\"\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/AdiumQQ/libqq-pidgin/libglib.framework/Headers",
+					"$(SRCROOT)/AdiumQQ/libqq-pidgin/libpurple.framework/Headers",
+				);
 				INFOPLIST_FILE = "AdiumQQ/AdiumQQ-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Application Support/Adium 2.0/PlugIns/";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = AdiumPlugin;
+				WRAPPER_EXTENSION = AdiumLibpurplePlugin;
 			};
 			name = Debug;
 		};
@@ -308,13 +546,27 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/AdiumQQ/libqq-pidgin\"",
+					"\"$(SRCROOT)/../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug\"",
+					"\"$(SRCROOT)/../adium/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdiumQQ/AdiumQQ-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"QQ_BUDDY_ICON_DIR=\"\\\"$(HOME)/Library/Application Support/Adium 2.0/QQ\\\"\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/AdiumQQ/libqq-pidgin/libglib.framework/Headers",
+					"$(SRCROOT)/AdiumQQ/libqq-pidgin/libpurple.framework/Headers",
+				);
 				INFOPLIST_FILE = "AdiumQQ/AdiumQQ-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Application Support/Adium 2.0/PlugIns/";
+				OTHER_LDFLAGS = (
+					"-undefined",
+					dynamic_lookup,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = AdiumPlugin;
+				WRAPPER_EXTENSION = AdiumLibpurplePlugin;
 			};
 			name = Release;
 		};
