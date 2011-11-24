@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEEF0645147DF61500BF67C5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEF0644147DF61500BF67C5 /* Cocoa.framework */; };
+		BEEF064F147DF61500BF67C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEEF064D147DF61500BF67C5 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BEEF0641147DF61400BF67C5 /* AdiumQQ.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumQQ.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEEF0644147DF61500BF67C5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BEEF0647147DF61500BF67C5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BEEF0648147DF61500BF67C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEEF0649147DF61500BF67C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEEF064C147DF61500BF67C5 /* AdiumQQ-Info.plist */ = {isa = PBXFileReference; path = "AdiumQQ-Info.plist"; sourceTree = "<group>"; };
+		BEEF064E147DF61500BF67C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEEF0650147DF61500BF67C5 /* AdiumQQ-Prefix.pch */ = {isa = PBXFileReference; path = "AdiumQQ-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEEF063E147DF61400BF67C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEF0645147DF61500BF67C5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEEF0636147DF61400BF67C5 = {
+			isa = PBXGroup;
+			children = (
+				BEEF064A147DF61500BF67C5 /* AdiumQQ */,
+				BEEF0643147DF61400BF67C5 /* Frameworks */,
+				BEEF0642147DF61400BF67C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEEF0642147DF61400BF67C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF0641147DF61400BF67C5 /* AdiumQQ.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEEF0643147DF61400BF67C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF0644147DF61500BF67C5 /* Cocoa.framework */,
+				BEEF0646147DF61500BF67C5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEEF0646147DF61500BF67C5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF0647147DF61500BF67C5 /* AppKit.framework */,
+				BEEF0648147DF61500BF67C5 /* CoreData.framework */,
+				BEEF0649147DF61500BF67C5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BEEF064A147DF61500BF67C5 /* AdiumQQ */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF064B147DF61500BF67C5 /* Supporting Files */,
+			);
+			path = AdiumQQ;
+			sourceTree = "<group>";
+		};
+		BEEF064B147DF61500BF67C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEEF064C147DF61500BF67C5 /* AdiumQQ-Info.plist */,
+				BEEF064D147DF61500BF67C5 /* InfoPlist.strings */,
+				BEEF0650147DF61500BF67C5 /* AdiumQQ-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEEF0640147DF61400BF67C5 /* AdiumQQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEEF0653147DF61500BF67C5 /* Build configuration list for PBXNativeTarget "AdiumQQ" */;
+			buildPhases = (
+				BEEF063D147DF61400BF67C5 /* Sources */,
+				BEEF063E147DF61400BF67C5 /* Frameworks */,
+				BEEF063F147DF61400BF67C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdiumQQ;
+			productName = AdiumQQ;
+			productReference = BEEF0641147DF61400BF67C5 /* AdiumQQ.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEEF0638147DF61400BF67C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Rochester Institute of Technology";
+			};
+			buildConfigurationList = BEEF063B147DF61400BF67C5 /* Build configuration list for PBXProject "AdiumQQ" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEEF0636147DF61400BF67C5;
+			productRefGroup = BEEF0642147DF61400BF67C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEEF0640147DF61400BF67C5 /* AdiumQQ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEEF063F147DF61400BF67C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEEF064F147DF61500BF67C5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEEF063D147DF61400BF67C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEEF064D147DF61500BF67C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEEF064E147DF61500BF67C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEEF0651147DF61500BF67C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEEF0652147DF61500BF67C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEEF0654147DF61500BF67C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdiumQQ/AdiumQQ-Prefix.pch";
+				INFOPLIST_FILE = "AdiumQQ/AdiumQQ-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BEEF0655147DF61500BF67C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdiumQQ/AdiumQQ-Prefix.pch";
+				INFOPLIST_FILE = "AdiumQQ/AdiumQQ-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEEF063B147DF61400BF67C5 /* Build configuration list for PBXProject "AdiumQQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEF0651147DF61500BF67C5 /* Debug */,
+				BEEF0652147DF61500BF67C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEEF0653147DF61500BF67C5 /* Build configuration list for PBXNativeTarget "AdiumQQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEF0654147DF61500BF67C5 /* Debug */,
+				BEEF0655147DF61500BF67C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEEF0638147DF61400BF67C5 /* Project object */;
+}
