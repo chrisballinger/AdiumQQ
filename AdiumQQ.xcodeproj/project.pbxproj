@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE991A83147E17E200645C2C /* QQAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BE991A7E147E17E200645C2C /* QQAccount.m */; };
-		BE991A84147E17E200645C2C /* QQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BE991A80147E17E200645C2C /* QQPlugin.m */; };
-		BE991A85147E17E200645C2C /* QQService.m in Sources */ = {isa = PBXBuildFile; fileRef = BE991A82147E17E200645C2C /* QQService.m */; };
 		BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A86147E19CB00645C2C /* libpurple.framework */; };
 		BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A88147E1A2000645C2C /* libglib.framework */; };
 		BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991BE6147E395700645C2C /* AIUtilities.framework */; };
+		BECEAB641486BC600095BC71 /* QQAccountOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECEAB631486BC600095BC71 /* QQAccountOptionView.xib */; };
+		BECEAB671486BD650095BC71 /* QQAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB661486BD650095BC71 /* QQAccountViewController.m */; };
+		BECEAB6E1486C1850095BC71 /* QQAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB691486C1850095BC71 /* QQAccount.m */; };
+		BECEAB6F1486C1850095BC71 /* QQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB6B1486C1850095BC71 /* QQPlugin.m */; };
+		BECEAB701486C1850095BC71 /* QQService.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB6D1486C1850095BC71 /* QQService.m */; };
 		BEE096D4147E43FC00F9A993 /* buddy_info.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE0969C147E43FC00F9A993 /* buddy_info.c */; };
 		BEE096D5147E43FC00F9A993 /* buddy_list.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE0969E147E43FC00F9A993 /* buddy_list.c */; };
 		BEE096D6147E43FC00F9A993 /* buddy_memo.c in Sources */ = {isa = PBXBuildFile; fileRef = BEE096A0147E43FC00F9A993 /* buddy_memo.c */; };
@@ -49,15 +51,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BE991A7D147E17E200645C2C /* QQAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QQAccount.h; path = "../../libqq-adium/libqq-adium/QQAccount.h"; sourceTree = "<group>"; };
-		BE991A7E147E17E200645C2C /* QQAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QQAccount.m; path = "../../libqq-adium/libqq-adium/QQAccount.m"; sourceTree = "<group>"; };
-		BE991A7F147E17E200645C2C /* QQPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QQPlugin.h; path = "../../libqq-adium/libqq-adium/QQPlugin.h"; sourceTree = "<group>"; };
-		BE991A80147E17E200645C2C /* QQPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QQPlugin.m; path = "../../libqq-adium/libqq-adium/QQPlugin.m"; sourceTree = "<group>"; };
-		BE991A81147E17E200645C2C /* QQService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QQService.h; path = "../../libqq-adium/libqq-adium/QQService.h"; sourceTree = "<group>"; };
-		BE991A82147E17E200645C2C /* QQService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QQService.m; path = "../../libqq-adium/libqq-adium/QQService.m"; sourceTree = "<group>"; };
 		BE991A86147E19CB00645C2C /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = "AdiumQQ/libqq-pidgin/libpurple.framework"; sourceTree = "<group>"; };
 		BE991A88147E1A2000645C2C /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = "AdiumQQ/libqq-pidgin/libglib.framework"; sourceTree = "<group>"; };
 		BE991BE6147E395700645C2C /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug/AIUtilities.framework"; sourceTree = "<group>"; };
+		BECEAB631486BC600095BC71 /* QQAccountOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQAccountOptionView.xib; sourceTree = "<group>"; };
+		BECEAB651486BD650095BC71 /* QQAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQAccountViewController.h; sourceTree = "<group>"; };
+		BECEAB661486BD650095BC71 /* QQAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQAccountViewController.m; sourceTree = "<group>"; };
+		BECEAB681486C1850095BC71 /* QQAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQAccount.h; sourceTree = "<group>"; };
+		BECEAB691486C1850095BC71 /* QQAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQAccount.m; sourceTree = "<group>"; };
+		BECEAB6A1486C1850095BC71 /* QQPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQPlugin.h; sourceTree = "<group>"; };
+		BECEAB6B1486C1850095BC71 /* QQPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQPlugin.m; sourceTree = "<group>"; };
+		BECEAB6C1486C1850095BC71 /* QQService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQService.h; sourceTree = "<group>"; };
+		BECEAB6D1486C1850095BC71 /* QQService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQService.m; sourceTree = "<group>"; };
 		BEE0969C147E43FC00F9A993 /* buddy_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_info.c; sourceTree = "<group>"; };
 		BEE0969D147E43FC00F9A993 /* buddy_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buddy_info.h; sourceTree = "<group>"; };
 		BEE0969E147E43FC00F9A993 /* buddy_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buddy_list.c; sourceTree = "<group>"; };
@@ -277,13 +282,16 @@
 		BEEF064A147DF61500BF67C5 /* AdiumQQ */ = {
 			isa = PBXGroup;
 			children = (
-				BE991A7D147E17E200645C2C /* QQAccount.h */,
-				BE991A7E147E17E200645C2C /* QQAccount.m */,
-				BE991A7F147E17E200645C2C /* QQPlugin.h */,
-				BE991A80147E17E200645C2C /* QQPlugin.m */,
-				BE991A81147E17E200645C2C /* QQService.h */,
-				BE991A82147E17E200645C2C /* QQService.m */,
+				BECEAB681486C1850095BC71 /* QQAccount.h */,
+				BECEAB691486C1850095BC71 /* QQAccount.m */,
+				BECEAB6A1486C1850095BC71 /* QQPlugin.h */,
+				BECEAB6B1486C1850095BC71 /* QQPlugin.m */,
+				BECEAB6C1486C1850095BC71 /* QQService.h */,
+				BECEAB6D1486C1850095BC71 /* QQService.m */,
 				BEEF064B147DF61500BF67C5 /* Supporting Files */,
+				BECEAB631486BC600095BC71 /* QQAccountOptionView.xib */,
+				BECEAB651486BD650095BC71 /* QQAccountViewController.h */,
+				BECEAB661486BD650095BC71 /* QQAccountViewController.m */,
 			);
 			path = AdiumQQ;
 			sourceTree = "<group>";
@@ -384,6 +392,7 @@
 				BEE096D9147E43FC00F9A993 /* InfoPlist.strings in Resources */,
 				BEE096EC147E43FC00F9A993 /* libqq-pidgin-Info.plist in Resources */,
 				BEE096ED147E43FC00F9A993 /* InfoPlist.strings in Resources */,
+				BECEAB641486BC600095BC71 /* QQAccountOptionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,9 +403,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE991A83147E17E200645C2C /* QQAccount.m in Sources */,
-				BE991A85147E17E200645C2C /* QQService.m in Sources */,
-				BE991A84147E17E200645C2C /* QQPlugin.m in Sources */,
 				BEE096D4147E43FC00F9A993 /* buddy_info.c in Sources */,
 				BEE096D5147E43FC00F9A993 /* buddy_list.c in Sources */,
 				BEE096D6147E43FC00F9A993 /* buddy_memo.c in Sources */,
@@ -420,6 +426,10 @@
 				BEE096E9147E43FC00F9A993 /* qq.c in Sources */,
 				BEE096EA147E43FC00F9A993 /* send_file.c in Sources */,
 				BEE096EB147E43FC00F9A993 /* utils.c in Sources */,
+				BECEAB671486BD650095BC71 /* QQAccountViewController.m in Sources */,
+				BECEAB6E1486C1850095BC71 /* QQAccount.m in Sources */,
+				BECEAB6F1486C1850095BC71 /* QQPlugin.m in Sources */,
+				BECEAB701486C1850095BC71 /* QQService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
