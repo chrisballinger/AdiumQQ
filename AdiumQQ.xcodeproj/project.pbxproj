@@ -10,7 +10,8 @@
 		BE991A87147E19CB00645C2C /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A86147E19CB00645C2C /* libpurple.framework */; };
 		BE991A89147E1A2000645C2C /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991A88147E1A2000645C2C /* libglib.framework */; };
 		BE991BE7147E395700645C2C /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE991BE6147E395700645C2C /* AIUtilities.framework */; };
-		BECEAB641486BC600095BC71 /* QQAccountOptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECEAB631486BC600095BC71 /* QQAccountOptionView.xib */; };
+		BEA1654214874FFC009AF31D /* PurpleDefaultsQQ.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEA1654114874FFC009AF31D /* PurpleDefaultsQQ.plist */; };
+		BECEAB641486BC600095BC71 /* QQAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BECEAB631486BC600095BC71 /* QQAccountView.xib */; };
 		BECEAB671486BD650095BC71 /* QQAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB661486BD650095BC71 /* QQAccountViewController.m */; };
 		BECEAB6E1486C1850095BC71 /* QQAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB691486C1850095BC71 /* QQAccount.m */; };
 		BECEAB6F1486C1850095BC71 /* QQPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BECEAB6B1486C1850095BC71 /* QQPlugin.m */; };
@@ -54,7 +55,8 @@
 		BE991A86147E19CB00645C2C /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = "AdiumQQ/libqq-pidgin/libpurple.framework"; sourceTree = "<group>"; };
 		BE991A88147E1A2000645C2C /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = "AdiumQQ/libqq-pidgin/libglib.framework"; sourceTree = "<group>"; };
 		BE991BE6147E395700645C2C /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = "../Library/Developer/Xcode/DerivedData/Adium-foiaivfxnjxhaacxhxhgzladniwj/Build/Products/Debug/AIUtilities.framework"; sourceTree = "<group>"; };
-		BECEAB631486BC600095BC71 /* QQAccountOptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQAccountOptionView.xib; sourceTree = "<group>"; };
+		BEA1654114874FFC009AF31D /* PurpleDefaultsQQ.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PurpleDefaultsQQ.plist; sourceTree = "<group>"; };
+		BECEAB631486BC600095BC71 /* QQAccountView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QQAccountView.xib; sourceTree = "<group>"; };
 		BECEAB651486BD650095BC71 /* QQAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQAccountViewController.h; sourceTree = "<group>"; };
 		BECEAB661486BD650095BC71 /* QQAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQAccountViewController.m; sourceTree = "<group>"; };
 		BECEAB681486C1850095BC71 /* QQAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQAccount.h; sourceTree = "<group>"; };
@@ -289,7 +291,8 @@
 				BECEAB6C1486C1850095BC71 /* QQService.h */,
 				BECEAB6D1486C1850095BC71 /* QQService.m */,
 				BEEF064B147DF61500BF67C5 /* Supporting Files */,
-				BECEAB631486BC600095BC71 /* QQAccountOptionView.xib */,
+				BECEAB631486BC600095BC71 /* QQAccountView.xib */,
+				BEA1654114874FFC009AF31D /* PurpleDefaultsQQ.plist */,
 				BECEAB651486BD650095BC71 /* QQAccountViewController.h */,
 				BECEAB661486BD650095BC71 /* QQAccountViewController.m */,
 			);
@@ -392,7 +395,8 @@
 				BEE096D9147E43FC00F9A993 /* InfoPlist.strings in Resources */,
 				BEE096EC147E43FC00F9A993 /* libqq-pidgin-Info.plist in Resources */,
 				BEE096ED147E43FC00F9A993 /* InfoPlist.strings in Resources */,
-				BECEAB641486BC600095BC71 /* QQAccountOptionView.xib in Resources */,
+				BECEAB641486BC600095BC71 /* QQAccountView.xib in Resources */,
+				BEA1654214874FFC009AF31D /* PurpleDefaultsQQ.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +527,7 @@
 		BEEF0654147DF61500BF67C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -553,6 +558,7 @@
 		BEEF0655147DF61500BF67C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",

@@ -12,4 +12,7 @@
     
 }
 
+#define KEY_QQ_TCP_CONNECT @"TCP Connect"
+#define KEY_QQ_CONNECT_HOST @"Server List"
+
 @end

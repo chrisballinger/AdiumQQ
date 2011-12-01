@@ -9,6 +9,8 @@
 #import "QQService.h"
 
 #import "QQAccount.h"
+#import "QQAccountViewController.h"
+
 #import <Adium/AIStatusControllerProtocol.h>
 #import <Adium/AISharedAdium.h> 
 
@@ -37,6 +39,10 @@
 
 - (Class) accountClass {
     return [QQAccount class];
+}
+
+- (AIAccountViewController*) accountViewController {
+    return [QQAccountViewController accountViewController];
 }
 
 - (NSString*) serviceCodeUniqueID {
