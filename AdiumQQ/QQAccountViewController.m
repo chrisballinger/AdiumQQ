@@ -26,7 +26,7 @@
     [checkBox_tcpConnect setState:[[account preferenceForKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS] boolValue]];
 
     [popUp_serverList setMenu:[self serverMenu]];
-    [popUp_serverList selectItemAtIndex:[[account preferenceForKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS] intValue]];
+    [popUp_serverList selectItemWithTitle:[account preferenceForKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS]];
 }
 
 - (void) saveConfiguration {
@@ -34,10 +34,8 @@
     
     [account setPreference:[NSNumber numberWithInteger:[checkBox_tcpConnect state]]forKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS];
 
-    NSString* selection = [[NSNumber numberWithLong:[popUp_serverList indexOfSelectedItem]] stringValue];
-    if ([selection longLongValue] != -1) {
-        [account setPreference:selection forKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS];
-    }
+
+    [account setPreference:[popUp_serverList titleOfSelectedItem] forKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS];
 }
 
 - (void) changedPreference:(id)sender {
