@@ -13,6 +13,7 @@
 
 #import <Adium/AIStatusControllerProtocol.h>
 #import <Adium/AISharedAdium.h> 
+#import <AIUtilities/AIImageAdditions.h>
 
 @implementation QQService
 
@@ -99,6 +100,16 @@
 
 - (AIServiceImportance) serviceImportance {
     return AIServiceSecondary;
+}
+
+- (NSImage *)defaultServiceIconOfType:(AIServiceIconType)iconType {
+	NSImage *baseImage = [NSImage imageNamed:@"QQ" forClass:[self class]];
+    
+	if (iconType == AIServiceIconSmall) {
+        [baseImage setSize:NSMakeSize(16, 16)];
+	}
+    
+	return baseImage;
 }
 
 @end

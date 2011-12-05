@@ -13,4 +13,6 @@
     IBOutlet NSPopUpButton* popUp_serverList;
 }
 
+- (IBAction) changedPreference:(id)sender;
+
 @end

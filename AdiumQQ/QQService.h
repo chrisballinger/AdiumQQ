@@ -7,6 +7,7 @@
 //
 
 #import <AdiumLibpurple/PurpleService.h>
+#import <Cocoa/Cocoa.h>
 
 @interface QQService : PurpleService {
 

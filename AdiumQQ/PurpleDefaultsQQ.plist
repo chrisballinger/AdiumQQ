@@ -6,5 +6,7 @@
 	<string>8000</string>
 	<key>TCP Connect</key>
 	<false/>
+	<key>Connect Host</key>
+	<string>sz3.tencent.com</string>
 </dict>
 </plist>
