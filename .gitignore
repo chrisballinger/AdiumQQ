@@ -1,3 +1,4 @@
 *.framework
 AdiumQQ/libqq-pidgin/libqq-pidgin/*
 *.xcbkptlist
+AdiumQQ.xcodeproj/project.xcworkspace/xcuserdata/will.xcuserdatad/UserInterfaceState.xcuserstate
