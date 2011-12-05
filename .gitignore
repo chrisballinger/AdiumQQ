@@ -1,3 +1,4 @@
 *.framework
 AdiumQQ/libqq-pidgin/libqq-pidgin/*
 *.xcbkptlist
+*.xcuserstate
