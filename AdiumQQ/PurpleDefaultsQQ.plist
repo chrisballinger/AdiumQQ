@@ -4,9 +4,9 @@
 <dict>
 	<key>Connect Port</key>
 	<string>8000</string>
-	<key>TCP Connect</key>
+	<key>use_tcp</key>
 	<false/>
-	<key>Connect Host</key>
-	<string>sz3.tencent.com</string>
+	<key>server</key>
+	<string>sz.tencent.com</string>
 </dict>
 </plist>
