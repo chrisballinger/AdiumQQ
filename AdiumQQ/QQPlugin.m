@@ -27,4 +27,20 @@ extern gboolean purple_init_qq_plugin(void);
 - (void) loadLibpurplePlugin {
 }
 
+- (NSString*) pluginAuthor {
+    return @"William Orr";
+}
+
+- (NSString*) pluginVersion {
+    return @"0.5";
+}
+
+- (NSString*) pluginDescription {
+    return @"Allows Adium to connect to QQ accounts";
+}
+
+- (NSString*) pluginWebsite {
+    return @"www.worrbase.com";
+}
+
 @end
