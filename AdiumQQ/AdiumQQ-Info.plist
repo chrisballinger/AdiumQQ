@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AIMinimumAdiumVersionRequirement</key>
-	<string>1.4</string>
+	<string>1.5b7</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>

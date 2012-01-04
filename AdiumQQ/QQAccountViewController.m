@@ -10,6 +10,8 @@
 
 #import "QQAccount.h"
 
+#include <libpurple/account.h>
+
 @interface QQAccountViewController ()
 - (NSMenu*) serverMenu;
 @end
@@ -27,15 +29,36 @@
 
     [popUp_serverList setMenu:[self serverMenu]];
     [popUp_serverList selectItemWithTitle:[account preferenceForKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS]];
+    
+    [textField_connectPort setStringValue:[account preferenceForKey:KEY_QQ_CONNECT_PORT group:GROUP_ACCOUNT_STATUS]];
 }
 
 - (void) saveConfiguration {
     [super saveConfiguration];
+    PurpleAccount* purpAcc = NULL;
     
-    [account setPreference:[NSNumber numberWithInteger:[checkBox_tcpConnect state]]forKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS];
+    if ([account respondsToSelector:@selector(purpleAccount)]) {
+        purpAcc = [account purpleAccount];
+    }
 
+    BOOL tcp = [checkBox_tcpConnect state];
+    [account setPreference:[NSNumber numberWithInt:tcp] forKey:KEY_QQ_TCP_CONNECT group:GROUP_ACCOUNT_STATUS];
+    
+    purple_account_set_bool(purpAcc, 
+                            [KEY_QQ_TCP_CONNECT UTF8String], 
+                            tcp);
 
-    [account setPreference:[popUp_serverList titleOfSelectedItem] forKey:KEY_QQ_CONNECT_HOST group:GROUP_ACCOUNT_STATUS];
+    NSString* server = [popUp_serverList titleOfSelectedItem];
+    [account setPreference:server forKey:KEY_CONNECT_HOST group:GROUP_ACCOUNT_STATUS];
+    
+    NSString* port = [textField_connectPort stringValue];
+    [account setPreference:[NSNumber numberWithInt:[port intValue]] forKey:KEY_CONNECT_PORT group:GROUP_ACCOUNT_STATUS];
+    
+    // Let's send over the preference information to libqq-pidgin
+    server = [[server stringByAppendingString:@":"] stringByAppendingString:port];
+    purple_account_set_string(purpAcc, 
+                               [KEY_QQ_CONNECT_HOST UTF8String], 
+                               [server UTF8String]);
 }
 
 - (void) changedPreference:(id)sender {

@@ -6,9 +6,9 @@
 //  Copyright (c) 2011 William Orr. All rights reserved.
 //
 
-#import <Adium/AIAccountViewController.h>
+#import <AdiumLibpurple/PurpleAccountViewController.h>
 
-@interface QQAccountViewController : AIAccountViewController {
+@interface QQAccountViewController : PurpleAccountViewController {
     IBOutlet NSButton* checkBox_tcpConnect;
     IBOutlet NSPopUpButton* popUp_serverList;
 }
