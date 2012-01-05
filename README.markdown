@@ -9,4 +9,6 @@ The maintainers of libpurple are dropping support for this service in the next r
 
 # Credit
 
-This project would not be possible without the hard work of the libqq-pidgin developers.
+This project would not be possible without the hard work of the libqq-pidgin developers. The original libqq-pidgin plugin is bundled with AdiumQQ. The standalone package is available [here](http://code.google.com/p/libqq-pidgin/).
+
+Thanks to all of the members of the libqq-pidgin team!
