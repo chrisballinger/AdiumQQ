@@ -2,6 +2,8 @@
 
 This is a plugin for QQ that enables QQ2010 in Adium. It requires a copy of libqq-pidgin to build and run successfully.
 
+**NOTE** This is a beta version of the plugin, and it doesn't support all of the features of QQ2010 yet. I'm working on adding file transfers, captcha support, etc. soon. Please file bugs, and thanks for the support!
+
 ## QQ2010
 
 QQ2010 is the latest version of the QQ protocol. The versions of QQ included with stable versions of pidgin and adium do not work with this new protocol.
